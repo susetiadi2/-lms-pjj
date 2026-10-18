@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Mr. DIVA - Smart Learning School LMS",
+  "short_name": "Mr. DIVA",
+  "description": "Aplikasi LMS Pembelajaran Jarak Jauh (PJJ) terpadu untuk Siswa, Guru, dan Kepala Sekolah.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#3d6053",
+  "background_color": "#f6f8f6",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

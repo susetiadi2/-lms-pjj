@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <script>
+      (function () {
+        // 1. Suppress third-party Chrome extension errors (e.g. chrome-extension:// request interceptors)
+        window.addEventListener(
+          'error',
+          function (e) {
+            if (
+              (e && e.filename && String(e.filename).indexOf('chrome-extension://') === 0) ||
+              (e && e.message && String(e.message).indexOf('Cannot set property fetch') !== -1)
+            ) {
+              e.stopImmediatePropagation();
+              e.preventDefault();
+              return false;
+            }
+          },
+          true
+        );
+
+        // 2. Helper to ensure a target object's 'fetch' property has both getter and setter
+        function ensureWritableFetch(target) {
+          if (!target) return;
+          try {
+            var desc = Object.getOwnPropertyDescriptor(target, 'fetch');
+            if (desc && desc.configurable !== false) {
+              var currentFn = (typeof window.fetch === 'function' ? window.fetch : desc.value) || function () {};
+              var getter = desc.get;
+              Object.defineProperty(target, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function () {
+                  return getter ? getter.call(this) : currentFn;
+                },
+                set: function (v) {
+                  if (typeof v === 'function') {
+                    currentFn = v;
+                    getter = null;
+                  }
+                },
+              });
+            }
+          } catch (err) {}
+        }
+
+        ensureWritableFetch(window);
+        ensureWritableFetch(Window.prototype);
+
+        // 3. Intercept future Object.defineProperty calls on window.fetch that omit a setter
+        try {
+          var origDefineProperty = Object.defineProperty;
+          Object.defineProperty = function (obj, prop, descriptor) {
+            if (
+              (obj === window || obj === Window.prototype) &&
+              prop === 'fetch' &&
+              descriptor &&
+              descriptor.get &&
+              !descriptor.set
+            ) {
+              var origGet = descriptor.get;
+              var overrideFn = null;
+              descriptor = Object.assign({}, descriptor, {
+                configurable: true,
+                get: function () {
+                  return overrideFn || origGet.call(this);
+                },
+                set: function (v) {
+                  if (typeof v === 'function') {
+                    overrideFn = v;
+                  }
+                },
+              });
+            }
+            return origDefineProperty.call(Object, obj, prop, descriptor);
+          };
+        } catch (err) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#3d6053" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Mr. DIVA" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Mr. DIVA - Smart Learning School</title>
+    <meta name="description" content="Aplikasi LMS Pembelajaran Jarak Jauh (PJJ) terpadu untuk Siswa, Guru, dan Kepala Sekolah dengan manajemen tugas & pengingat pintar." />
+    <meta property="og:title" content="Mr. DIVA - Smart Learning School" />
+    <meta property="og:description" content="Aplikasi LMS Pembelajaran Jarak Jauh (PJJ) terpadu untuk Siswa, Guru, dan Kepala Sekolah." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#f6f8f6] text-slate-800 font-sans antialiased selection:bg-[#3b6355]/20 selection:text-[#2d4f43]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

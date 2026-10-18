@@ -1,0 +1,8 @@
+{
+  "name": "Remix Mr. DIVA - Smart Learning School LMS",
+  "description": "Aplikasi LMS PJJ modern untuk Siswa, Guru, dan Kepala Sekolah dengan manajemen materi, tugas harian \u0026 pengingat pintar, ujian, bank soal, serta monitoring kelas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

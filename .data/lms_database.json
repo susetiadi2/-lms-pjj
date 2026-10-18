@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": 4,
+  "lastUpdated": "2026-10-18T12:25:23.210Z",
+  "schools": [
+    {
+      "id": "SCH-DIVA-001",
+      "name": "SD Smart Learning Mr. DIVA",
+      "code": "MRDIVA-JKT",
+      "city": "Jakarta Selatan",
+      "subscriptionPlan": "enterprise"
+    },
+    {
+      "id": "SCH-ISOLATED-002",
+      "name": "SD Perintis Nusantara (Sekolah Lain)",
+      "code": "PERINTIS-BDG",
+      "city": "Bandung",
+      "subscriptionPlan": "standard"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-ks-1",
+      "username": "087695_diva",
+      "name": "Mr. DIVA, M.Pd.",
+      "role": "kepala_sekolah",
+      "nisOrNip": "19790514 200312 1 002",
+      "email": "mr.diva@smartschool.sch.id",
+      "phone": "0812-8899-7711",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$HGNR/cQAzE9TtboK8rKmieOA4PGW7KtYiIBqyUkTdxtYPxCWnnsPa"
+    },
+    {
+      "id": "user-guru-1",
+      "username": "guru_rahma",
+      "name": "Ibu Rahmawati, S.Pd.",
+      "role": "guru",
+      "className": "Kelas 5A",
+      "subjectSpecialty": "Tematik & Bahasa Indonesia",
+      "nisOrNip": "19850320 200801 2 014",
+      "email": "rahmawati@smartschool.sch.id",
+      "phone": "0813-4455-6677",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$Vp5ahjFoE.HQzacNIDfLLOQKgAU9ikUUJp.oEgIy7D4Klh6oAbj/C"
+    },
+    {
+      "id": "user-guru-2",
+      "username": "guru_hendra",
+      "name": "Pak Hendra Saputra, M.Pd.",
+      "role": "guru",
+      "className": "Kelas 5B & 6A",
+      "subjectSpecialty": "Matematika & IPA",
+      "nisOrNip": "19871115 201001 1 008",
+      "email": "hendra.s@smartschool.sch.id",
+      "phone": "0812-9988-3322",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$baC1Md8mapnS2KenZnj.W.CkgI/VGJXLW86hHz/KT6z0l89GISp8y"
+    },
+    {
+      "id": "user-siswa-1",
+      "username": "siswa_fauzan",
+      "name": "Ahmad Fauzan",
+      "role": "siswa",
+      "className": "Kelas 5A",
+      "nisOrNip": "NISN-0091827364",
+      "email": "fauzan.ahmad@siswa.smartschool.sch.id",
+      "phone": "0857-1122-3344",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$sQ3G9zruzW4n8QY.itpcM.l2YEzeIPGGFOqFp.umkZLnYRP/bfAhC"
+    },
+    {
+      "id": "user-siswa-2",
+      "username": "siswa_annisa",
+      "name": "Siti Annisa Putri",
+      "role": "siswa",
+      "className": "Kelas 5A",
+      "nisOrNip": "NISN-0091827365",
+      "email": "annisa.putri@siswa.smartschool.sch.id",
+      "phone": "0857-3344-5566",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$TAcKj6tSS1ZpwNoeEWPZZOBXxWv778yJPgcKzZycS.u2kaHr8RjTe"
+    },
+    {
+      "id": "user-siswa-3",
+      "username": "siswa_budi",
+      "name": "Budi Kurniawan Pratama",
+      "role": "siswa",
+      "className": "Kelas 5B",
+      "nisOrNip": "NISN-0091827366",
+      "email": "budi.kurnia@siswa.smartschool.sch.id",
+      "phone": "0857-7788-9900",
+      "status": "active",
+      "schoolId": "SCH-DIVA-001",
+      "passwordHash": "$2b$10$hmDvFgBxpWr26IR9rTmHYO7Ofo4ztTJaxfmj7PI/kujPB00Yd3ySO"
+    },
+    {
+      "id": "user-isolated-guru-99",
+      "schoolId": "SCH-ISOLATED-002",
+      "username": "guru_perintis",
+      "passwordHash": "$2b$10$83gB.5OLPK.Wp6jS0T9KI.pGn4XjXWzXtVlzrJt4sfiy4hSbbEh..",
+      "name": "Pak Budi Hartono (Sekolah Perintis)",
+      "role": "guru",
+      "nisOrNip": "19880101999999",
+      "className": "Kelas 4A",
+      "subjectSpecialty": "IPA",
+      "email": "budi@perintis.sch.id",
+      "phone": "08129999999",
+      "status": "active"
+    },
+    {
+      "id": "user-isolated-siswa-99",
+      "schoolId": "SCH-ISOLATED-002",
+      "username": "siswa_perintis",
+      "passwordHash": "$2b$10$RTtTP439BIsVvNIXdEJJT.bxxwhN5.e6PWoHmJJ0qs6DKt0PziE8C",
+      "name": "Rian Saputra (Siswa Perintis)",
+      "role": "siswa",
+      "nisOrNip": "20240099",
+      "className": "Kelas 4A",
+      "email": "rian@perintis.sch.id",
+      "phone": "08128888888",
+      "status": "active"
+    }
+  ],
+  "sessions": [
+    [
+      "mrd_sess_e3cbc33c1ce64e3a02adc23663e24632a84a14c16e555b63cb731b6fb41d73b9",
+      {
+        "token": "mrd_sess_e3cbc33c1ce64e3a02adc23663e24632a84a14c16e555b63cb731b6fb41d73b9",
+        "userId": "user-ks-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "kepala_sekolah",
+        "createdAt": 1792323110697,
+        "expiresAt": 1792927910697,
+        "csrfToken": "e602bbd5ddd628c2dfea7a380d8c4814026dfec254ccb0de"
+      }
+    ],
+    [
+      "mrd_sess_ba227355fa8698f4b08da685039f6f396b52f706a6041ecc830cd5ebccb28c92",
+      {
+        "token": "mrd_sess_ba227355fa8698f4b08da685039f6f396b52f706a6041ecc830cd5ebccb28c92",
+        "userId": "user-siswa-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "siswa",
+        "createdAt": 1792323554175,
+        "expiresAt": 1792928354175,
+        "csrfToken": "18a78174c548c86c0c73cd1081cbc478f5fd9c38d30b0d1e"
+      }
+    ],
+    [
+      "mrd_sess_ac6586c6f33f43c6f18426049249d8d4b57978972b120bc88971bf2f54f268a0",
+      {
+        "token": "mrd_sess_ac6586c6f33f43c6f18426049249d8d4b57978972b120bc88971bf2f54f268a0",
+        "userId": "user-guru-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "guru",
+        "createdAt": 1792323554177,
+        "expiresAt": 1792928354177,
+        "csrfToken": "7aa303aeedb2e52d0d7b35de420ec859ab57711f7b034cfb"
+      }
+    ],
+    [
+      "mrd_sess_a9bac2733ed5ee3aa35a4caf540791ac3160d9a64e9b3265c167f87770f34a3a",
+      {
+        "token": "mrd_sess_a9bac2733ed5ee3aa35a4caf540791ac3160d9a64e9b3265c167f87770f34a3a",
+        "userId": "user-ks-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "kepala_sekolah",
+        "createdAt": 1792323554177,
+        "expiresAt": 1792928354177,
+        "csrfToken": "542d628243f3086358c9e16a1029e4be406544e8bea0129d"
+      }
+    ],
+    [
+      "mrd_sess_d102ff89527ec12b5b420fa2e852b5f042c030451514f6f628f0de69fc63d953",
+      {
+        "token": "mrd_sess_d102ff89527ec12b5b420fa2e852b5f042c030451514f6f628f0de69fc63d953",
+        "csrfToken": "bbef7381388210f9b5e268fbc2a007daba20e5987b3cf777",
+        "userId": "user-guru-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "guru",
+        "createdAt": 1792325806064,
+        "expiresAt": 1792930606064
+      }
+    ],
+    [
+      "mrd_sess_e1d795b093e6b229782348f74198cac8c9151c630e4d61da3e86c945bb57980b",
+      {
+        "token": "mrd_sess_e1d795b093e6b229782348f74198cac8c9151c630e4d61da3e86c945bb57980b",
+        "csrfToken": "a65060a4ffd2382c587ae2042cc19d2a98ba1c40ed73afec",
+        "userId": "user-ks-1",
+        "schoolId": "SCH-DIVA-001",
+        "role": "kepala_sekolah",
+        "createdAt": 1792326322853,
+        "expiresAt": 1792931122853
+      }
+    ]
+  ],
+  "classes": [
+    {
+      "id": "c-1a",
+      "name": "Kelas 1A",
+      "level": 1,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Farida, S.Pd.",
+      "totalStudents": 28,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-1b",
+      "name": "Kelas 1B",
+      "level": 1,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Nurul, S.Pd.",
+      "totalStudents": 27,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-2a",
+      "name": "Kelas 2A",
+      "level": 2,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Pak Dimas, S.Pd.",
+      "totalStudents": 29,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-2b",
+      "name": "Kelas 2B",
+      "level": 2,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Dewi, S.Pd.",
+      "totalStudents": 28,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-3a",
+      "name": "Kelas 3A",
+      "level": 3,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Sri, S.Pd.",
+      "totalStudents": 30,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-4a",
+      "name": "Kelas 4A",
+      "level": 4,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Pak Agus, M.Pd.",
+      "totalStudents": 31,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-4b",
+      "name": "Kelas 4B",
+      "level": 4,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Rina, S.Pd.",
+      "totalStudents": 30,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-5a",
+      "name": "Kelas 5A",
+      "level": 5,
+      "homeroomTeacherId": "user-guru-1",
+      "homeroomTeacherName": "Ibu Rahmawati, S.Pd.",
+      "totalStudents": 32,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-5b",
+      "name": "Kelas 5B",
+      "level": 5,
+      "homeroomTeacherId": "user-guru-2",
+      "homeroomTeacherName": "Pak Hendra Saputra, M.Pd.",
+      "totalStudents": 31,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-6a",
+      "name": "Kelas 6A",
+      "level": 6,
+      "homeroomTeacherId": "user-guru-2",
+      "homeroomTeacherName": "Pak Bambang, M.Pd.",
+      "totalStudents": 32,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "c-6b",
+      "name": "Kelas 6B",
+      "level": 6,
+      "homeroomTeacherId": "user-guru-2",
+      "homeroomTeacherName": "Ibu Ratna, S.Pd.",
+      "totalStudents": 30,
+      "academicYear": "2026/2027",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub-1",
+      "code": "TEM-5",
+      "name": "Tematik Terpadu",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Ibu Rahmawati, S.Pd.",
+      "iconName": "Layers",
+      "color": "#3d6053",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "sub-2",
+      "code": "MTK-5",
+      "name": "Matematika Terapan",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Pak Hendra Saputra, M.Pd.",
+      "iconName": "Calculator",
+      "color": "#2563eb",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "sub-3",
+      "code": "IPA-5",
+      "name": "Ilmu Pengetahuan Alam",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Pak Hendra Saputra, M.Pd.",
+      "iconName": "FlaskConical",
+      "color": "#059669",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "sub-4",
+      "code": "BIN-5",
+      "name": "Bahasa Indonesia",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Ibu Rahmawati, S.Pd.",
+      "iconName": "BookOpen",
+      "color": "#d97706",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "sub-5",
+      "code": "PAI-5",
+      "name": "Pendidikan Agama Islam",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Ustadz Mansyur, S.Pd.I.",
+      "iconName": "Sparkles",
+      "color": "#0284c7",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "sub-6",
+      "code": "BIG-5",
+      "name": "Bahasa Inggris Dasar",
+      "gradeLevel": "Kelas 5",
+      "teacherName": "Miss Sarah Johnson",
+      "iconName": "Languages",
+      "color": "#7c3aed",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat-1",
+      "title": "Siklus Air dan Manfaatnya bagi Kehidupan di Bumi",
+      "subjectId": "sub-3",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "classLevel": "Kelas 5A",
+      "authorId": "user-guru-2",
+      "authorName": "Pak Hendra Saputra, M.Pd.",
+      "createdAt": "2026-10-15",
+      "description": "Pelajari proses evaporasi, kondensasi, presipitasi, dan infiltrasi dalam siklus hidrologi bumi.",
+      "content": "## Pengertian Siklus Air\nSiklus air (hidrologi) adalah perputaran air yang terjadi secara terus-menerus dari bumi ke atmosfer dan kembali lagi ke bumi.\n\n### 4 Tahapan Utama:\n1. **Evaporasi (Penguapan)**: Air di permukaan bumi (laut, danau, sungai) menguap karena panas sinar matahari.\n2. **Kondensasi (Pengembunan)**: Uap air di atmosfer naik dan mendingin membentuk awan tebal.\n3. **Presipitasi (Hujan)**: Titik-titik air di awan turun menjadi hujan saat sudah jenuh.\n4. **Infiltrasi (Penyerapan)**: Sebagian air hujan meresap ke dalam tanah menjadi cadangan air tanah.\n\n> *Catatan Guru:* Jagalah kelestarian hutan agar daya resap air di bumi tetap terjaga!",
+      "type": "article",
+      "fileSize": "1.4 MB",
+      "readTime": "7 menit",
+      "viewsCount": 48,
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "mat-2",
+      "title": "Konsep Dasar Pecahan Senilai dan Operasi Hitung",
+      "subjectId": "sub-2",
+      "subjectName": "Matematika Terapan",
+      "classLevel": "Kelas 5A",
+      "authorId": "user-guru-2",
+      "authorName": "Pak Hendra Saputra, M.Pd.",
+      "createdAt": "2026-10-16",
+      "description": "Visualisasi membagi kue menjadi pecahan setara 1/2 = 2/4 = 4/8 beserta latihan terarah.",
+      "content": "## Memahami Pecahan Senilai\nDua pecahan dikatakan senilai apabila mempunyai nilai yang sama meskipun pembilang dan penyebutnya berbeda.\n\n### Contoh Sederhana:\n- Jika sebuah pizza dipotong menjadi 2 bagian yang sama, satu potongan adalah **1/2**.\n- Jika pizza yang sama dipotong menjadi 4 bagian, dua potongan adalah **2/4**.\n- Besar potongan **1/2** sama persis dengan **2/4**!\n\n### Cara Menentukan Pecahan Senilai:\nKalikan atau bagikan pembilang dan penyebut dengan angka bilangan bulat yang sama (selain 0).",
+      "type": "video",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "fileSize": "3.8 MB",
+      "readTime": "10 menit",
+      "viewsCount": 65,
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "mat-3",
+      "title": "Menulis Ringkasan Berdasarkan Ide Pokok Paragraf",
+      "subjectId": "sub-4",
+      "subjectName": "Bahasa Indonesia",
+      "classLevel": "Kelas 5A",
+      "authorId": "user-guru-1",
+      "authorName": "Ibu Rahmawati, S.Pd.",
+      "createdAt": "2026-10-17",
+      "description": "Panduan langkah demi langkah menyaring kalimat utama menjadi kesimpulan paragraf efektif.",
+      "content": "## Menemukan Ide Pokok\nIde pokok merupakan inti atau topik utama yang dibahas dalam suatu paragraf. Biasanya terletak di awal (deduktif), akhir (induktif), atau campuran.\n\n### Langkah Praktis Menulis Ringkasan:\n1. Bacalah teks secara menyeluruh dengan konsentrasi.\n2. Tandai kalimat penting atau ide pokok di setiap alinea.\n3. Tulis ulang dengan bahasa sendiri yang ringkas dan padat.",
+      "type": "pdf",
+      "fileSize": "2.1 MB",
+      "readTime": "5 menit",
+      "viewsCount": 32,
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Tugas Harian: Buat Diagram Siklus Air & Jelaskan Tahap Evaporasi",
+      "subjectId": "sub-3",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "className": "Kelas 5A",
+      "teacherId": "user-guru-2",
+      "teacherName": "Pak Hendra Saputra, M.Pd.",
+      "description": "Gambarlah bagan siklus air di buku tulis gambar atau kertas HVS, lalu berikan penjelasan singkat tentang proses evaporasi dan presipitasi.",
+      "instructions": [
+        "Gambarkan 4 tahapan siklus air dengan warna menarik.",
+        "Beri label: Evaporasi, Kondensasi, Presipitasi, dan Infiltrasi.",
+        "Tuliskan kesimpulan 3 kalimat tentang mengapa air di bumi tidak pernah habis.",
+        "Foto hasil karyamu dan unggah di form penyerahan tugas ini."
+      ],
+      "dueDate": "2026-10-18T17:00:00.000Z",
+      "priority": "tinggi",
+      "points": 100,
+      "allowFileUpload": true,
+      "createdAt": "2026-10-17T08:00:00Z",
+      "reminder": {
+        "enabled": true,
+        "remindMinutesBefore": 120,
+        "notifySound": true,
+        "customMessage": "Pengingat Pintar: Tugas Diagram IPA harus dikumpulkan sore ini sebelum pukul 17.00!"
+      },
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "task-2",
+      "title": "Latihan Pecahan Senilai & Soal Cerita Halaman 42",
+      "subjectId": "sub-2",
+      "subjectName": "Matematika Terapan",
+      "className": "Kelas 5A",
+      "teacherId": "user-guru-2",
+      "teacherName": "Pak Hendra Saputra, M.Pd.",
+      "description": "Selesaikan 5 soal cerita mengenai pembagian kue dan luas taman menggunakan penyederhanaan pecahan senilai.",
+      "instructions": [
+        "Buka modul matematika halaman 42 latihan 2.",
+        "Kerjakan nomor 1 sampai 5 lengkap dengan cara penyelesaian.",
+        "Ketikkan jawaban ringkas di kolom teks atau lampirkan foto lembar kerja."
+      ],
+      "dueDate": "2026-10-19T12:00:00.000Z",
+      "priority": "sedang",
+      "points": 100,
+      "allowFileUpload": true,
+      "createdAt": "2026-10-18T07:30:00Z",
+      "reminder": {
+        "enabled": true,
+        "remindMinutesBefore": 60,
+        "notifySound": true,
+        "customMessage": "Pengingat Pintar: Latihan Matematika batas akhir besok siang jam 12.00."
+      },
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "task-3",
+      "title": "Menulis Paragraf Deskripsi: Keindahan Lingkungan Rumahku",
+      "subjectId": "sub-4",
+      "subjectName": "Bahasa Indonesia",
+      "className": "Kelas 5A",
+      "teacherId": "user-guru-1",
+      "teacherName": "Ibu Rahmawati, S.Pd.",
+      "description": "Tuliskan satu paragraf deskripsi (minimal 6 kalimat) yang menceritakan lingkungan tempat tinggalmu dalam menyambut musim hujan.",
+      "instructions": [
+        "Gunakan ejaan bahasa Indonesia yang baik dan benar (EYD/PUEBI).",
+        "Sertakan setidaknya dua kata serapan indera (melihat, mendengar, atau mencium aroma).",
+        "Periksa kembali tanda baca titik dan koma sebelum mengirim."
+      ],
+      "dueDate": "2026-10-20T23:59:00.000Z",
+      "priority": "rendah",
+      "points": 100,
+      "allowFileUpload": false,
+      "createdAt": "2026-10-18T09:00:00Z",
+      "reminder": {
+        "enabled": true,
+        "remindMinutesBefore": 1440,
+        "notifySound": false,
+        "customMessage": "Pengingat: Tugas menulis paragraf masih ada waktu 2 hari lagi."
+      },
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "subm-1",
+      "taskId": "task-1",
+      "studentId": "user-siswa-2",
+      "studentName": "Siti Annisa Putri",
+      "className": "Kelas 5A",
+      "submittedAt": "2026-10-18T02:15:00Z",
+      "submissionText": "Sudah saya gambar di kertas A4 dan diwarnai rapi menggunakan krayon. Gambar siklus air meliputi penguapan air danau dan pembentukan awan kumulus.",
+      "fileAttachment": "diagram_siklus_air_annisa.jpg",
+      "score": 95,
+      "feedback": "Luar biasa Annisa! Gambarnya sangat detail dan penjelasannya runtut.",
+      "gradedAt": "2026-10-18T03:00:00Z",
+      "status": "dinilai",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-1",
+      "schoolId": "SCH-DIVA-001",
+      "title": "Penilaian Harian (PH) 1: IPA Siklus Alam & Lingkungan",
+      "subjectId": "sub-3",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "className": "Kelas 5A",
+      "durationMinutes": 30,
+      "startDate": "2026-10-18T00:00:00Z",
+      "endDate": "2026-10-25T23:59:00Z",
+      "questionsCount": 5,
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "Peristiwa penguapan air permukaan bumi akibat pemanasan sinar matahari disebut dengan istilah...",
+          "options": [
+            {
+              "key": "A",
+              "text": "Presipitasi"
+            },
+            {
+              "key": "B",
+              "text": "Evaporasi"
+            },
+            {
+              "key": "C",
+              "text": "Kondensasi"
+            },
+            {
+              "key": "D",
+              "text": "Infiltrasi"
+            }
+          ],
+          "points": 20
+        },
+        {
+          "id": "q2",
+          "questionText": "Awan yang terbentuk dari kumpulan titik-titik air di atmosfer merupakan hasil dari tahapan...",
+          "options": [
+            {
+              "key": "A",
+              "text": "Kondensasi (Pengembunan)"
+            },
+            {
+              "key": "B",
+              "text": "Transpirasi"
+            },
+            {
+              "key": "C",
+              "text": "Evaporasi"
+            },
+            {
+              "key": "D",
+              "text": "Sublimasi"
+            }
+          ],
+          "points": 20
+        },
+        {
+          "id": "q3",
+          "questionText": "Apa dampak berkurangnya daerah resapan air di wilayah perkotaan terhadap siklus air?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hujan akan turun lebih sering"
+            },
+            {
+              "key": "B",
+              "text": "Cadangan air tanah meningkat pesat"
+            },
+            {
+              "key": "C",
+              "text": "Aliran permukaan memicu banjir dan berkurangnya air tanah"
+            },
+            {
+              "key": "D",
+              "text": "Penguapan air laut terhenti total"
+            }
+          ],
+          "points": 20
+        },
+        {
+          "id": "q4",
+          "questionText": "Bentuk air yang turun dari langit ke bumi dalam siklus hidrologi dinamakan...",
+          "options": [
+            {
+              "key": "A",
+              "text": "Presipitasi"
+            },
+            {
+              "key": "B",
+              "text": "Asimilasi"
+            },
+            {
+              "key": "C",
+              "text": "Kondensasi"
+            },
+            {
+              "key": "D",
+              "text": "Erosi"
+            }
+          ],
+          "points": 20
+        },
+        {
+          "id": "q5",
+          "questionText": "Peran tumbuhan dalam siklus air yang melepaskan uap air melalui pori-pori daun disebut...",
+          "options": [
+            {
+              "key": "A",
+              "text": "Fotosintesis"
+            },
+            {
+              "key": "B",
+              "text": "Transpirasi"
+            },
+            {
+              "key": "C",
+              "text": "Respirasi"
+            },
+            {
+              "key": "D",
+              "text": "Fermentasi"
+            }
+          ],
+          "points": 20
+        }
+      ],
+      "isPublished": true,
+      "createdBy": "Pak Hendra Saputra, M.Pd."
+    },
+    {
+      "id": "exam-2",
+      "schoolId": "SCH-DIVA-001",
+      "title": "Kuis Kilat Matematika: Pecahan Senilai & Sederhana",
+      "subjectId": "sub-2",
+      "subjectName": "Matematika Terapan",
+      "className": "Kelas 5A",
+      "durationMinutes": 20,
+      "startDate": "2026-10-18T00:00:00Z",
+      "endDate": "2026-10-24T23:59:00Z",
+      "questionsCount": 3,
+      "questions": [
+        {
+          "id": "qm1",
+          "questionText": "Pecahan yang senilai dengan 2/3 jika dikalikan dengan 4 adalah...",
+          "options": [
+            {
+              "key": "A",
+              "text": "6/9"
+            },
+            {
+              "key": "B",
+              "text": "8/12"
+            },
+            {
+              "key": "C",
+              "text": "8/15"
+            },
+            {
+              "key": "D",
+              "text": "4/6"
+            }
+          ],
+          "points": 33
+        },
+        {
+          "id": "qm2",
+          "questionText": "Bentuk paling sederhana dari pecahan 15/25 adalah...",
+          "options": [
+            {
+              "key": "A",
+              "text": "3/5"
+            },
+            {
+              "key": "B",
+              "text": "5/7"
+            },
+            {
+              "key": "C",
+              "text": "1/2"
+            },
+            {
+              "key": "D",
+              "text": "2/5"
+            }
+          ],
+          "points": 33
+        },
+        {
+          "id": "qm3",
+          "questionText": "Ibu memotong semangka menjadi 8 bagian sama besar. Rian memakan 2 bagian. Berapa bagian semangka yang dimakan Rian dalam pecahan sederhana?",
+          "options": [
+            {
+              "key": "A",
+              "text": "1/4"
+            },
+            {
+              "key": "B",
+              "text": "1/2"
+            },
+            {
+              "key": "C",
+              "text": "3/8"
+            },
+            {
+              "key": "D",
+              "text": "2/6"
+            }
+          ],
+          "points": 34
+        }
+      ],
+      "isPublished": true,
+      "createdBy": "Pak Hendra Saputra, M.Pd."
+    },
+    {
+      "id": "exam-isolated-002",
+      "schoolId": "SCH-ISOLATED-002",
+      "title": "Ujian IPA Khusus SD Perintis Nusantara",
+      "subjectId": "sub-ipa-perintis",
+      "subjectName": "IPA Terpadu",
+      "className": "Kelas 4A",
+      "durationMinutes": 45,
+      "startDate": "2026-03-01T08:00:00Z",
+      "endDate": "2026-12-31T23:59:59Z",
+      "questionsCount": 2,
+      "questions": [
+        {
+          "id": "q-iso-1",
+          "questionText": "Bagian tumbuhan yang berfungsi menyerap air dari dalam tanah adalah?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Akar"
+            },
+            {
+              "key": "B",
+              "text": "Daun"
+            },
+            {
+              "key": "C",
+              "text": "Batang"
+            },
+            {
+              "key": "D",
+              "text": "Bunga"
+            }
+          ],
+          "points": 50
+        },
+        {
+          "id": "q-iso-2",
+          "questionText": "Gas yang dibutuhkan tumbuhan untuk fotosintesis adalah?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Oksigen"
+            },
+            {
+              "key": "B",
+              "text": "Karbondioksida"
+            },
+            {
+              "key": "C",
+              "text": "Nitrogen"
+            },
+            {
+              "key": "D",
+              "text": "Hidrogen"
+            }
+          ],
+          "points": 50
+        }
+      ],
+      "isPublished": true,
+      "createdBy": "Pak Budi Hartono (Sekolah Perintis)"
+    }
+  ],
+  "examResults": [
+    {
+      "id": "res-1792323554234-user-siswa-1",
+      "examId": "exam-1",
+      "examTitle": "Penilaian Harian (PH) 1: IPA Siklus Alam & Lingkungan",
+      "schoolId": "SCH-DIVA-001",
+      "studentId": "user-siswa-1",
+      "studentName": "Ahmad Fauzan",
+      "className": "Kelas 5A",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "isPassed": false,
+      "completedAt": "2026-10-18T11:39:14.234Z",
+      "timeSpentSeconds": 120,
+      "evaluatedByServer": true,
+      "serverAuditHash": "SRV_VERIFIED_0_PTS_1792323554234",
+      "itemEvaluations": [
+        {
+          "questionId": "q1",
+          "studentChoice": null,
+          "isCorrect": false,
+          "earnedPoints": 0,
+          "maxPoints": 20,
+          "correctAnswer": "B",
+          "explanation": "Evaporasi adalah proses perubahan air dari fase cair menjadi uap air akibat panas matahari."
+        },
+        {
+          "questionId": "q2",
+          "studentChoice": null,
+          "isCorrect": false,
+          "earnedPoints": 0,
+          "maxPoints": 20,
+          "correctAnswer": "A",
+          "explanation": "Kondensasi terjadi ketika uap air yang naik mendingin dan berubah menjadi butiran air penyusun awan."
+        },
+        {
+          "questionId": "q3",
+          "studentChoice": null,
+          "isCorrect": false,
+          "earnedPoints": 0,
+          "maxPoints": 20,
+          "correctAnswer": "C",
+          "explanation": "Tanpa daerah resapan, air hujan tidak dapat meresap (infiltrasi) melainkan langsung mengalir di permukaan sehingga memicu genangan air atau banjir."
+        },
+        {
+          "questionId": "q4",
+          "studentChoice": null,
+          "isCorrect": false,
+          "earnedPoints": 0,
+          "maxPoints": 20,
+          "correctAnswer": "A",
+          "explanation": "Presipitasi mencakup semua bentuk air yang jatuh dari atmosfer, seperti air hujan, salju, maupun embun."
+        },
+        {
+          "questionId": "q5",
+          "studentChoice": null,
+          "isCorrect": false,
+          "earnedPoints": 0,
+          "maxPoints": 20,
+          "correctAnswer": "B",
+          "explanation": "Transpirasi adalah proses hilangnya air dalam bentuk uap dari jaringan tumbuhan melalui stomata daun."
+        }
+      ]
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "qb-1",
+      "subjectId": "sub-3",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "classLevel": "Kelas 5",
+      "difficulty": "Mudah",
+      "topic": "Siklus Air",
+      "questionText": "Sinar matahari berperan dalam siklus air sebagai...",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pemicu proses penguapan air di bumi"
+        },
+        {
+          "key": "B",
+          "text": "Pembeku butiran air di awan"
+        },
+        {
+          "key": "C",
+          "text": "Penyerap air ke dalam tanah"
+        },
+        {
+          "key": "D",
+          "text": "Penghembus angin"
+        }
+      ],
+      "correctAnswer": "A",
+      "authorName": "Pak Hendra Saputra, M.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "qb-2",
+      "subjectId": "sub-2",
+      "subjectName": "Matematika Terapan",
+      "classLevel": "Kelas 5",
+      "difficulty": "Sedang",
+      "topic": "Pecahan",
+      "questionText": "Hasil dari 1/2 + 1/4 adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text": "2/6"
+        },
+        {
+          "key": "B",
+          "text": "3/4"
+        },
+        {
+          "key": "C",
+          "text": "2/4"
+        },
+        {
+          "key": "D",
+          "text": "4/4"
+        }
+      ],
+      "correctAnswer": "B",
+      "authorName": "Pak Hendra Saputra, M.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "qb-3",
+      "subjectId": "sub-4",
+      "subjectName": "Bahasa Indonesia",
+      "classLevel": "Kelas 5",
+      "difficulty": "Mudah",
+      "topic": "Teks Deskripsi",
+      "questionText": "Ciri utama dari teks deskripsi adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text": "Berisi langkah-langkah membuat sesuatu"
+        },
+        {
+          "key": "B",
+          "text": "Menggambarkan objek secara terperinci sehingga pembaca seolah merasakan"
+        },
+        {
+          "key": "C",
+          "text": "Berisi perdebatan dua pendapat berlawanan"
+        },
+        {
+          "key": "D",
+          "text": "Menyajikan dongeng fiksi masa lalu"
+        }
+      ],
+      "correctAnswer": "B",
+      "authorName": "Ibu Rahmawati, S.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "qb-4",
+      "subjectId": "sub-3",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "classLevel": "Kelas 5",
+      "difficulty": "Sulit",
+      "topic": "Ekosistem",
+      "questionText": "Dalam rantai makanan di sawah, posisi ular sawah adalah sebagai konsumen...",
+      "options": [
+        {
+          "key": "A",
+          "text": "Konsumen Primer (I)"
+        },
+        {
+          "key": "B",
+          "text": "Konsumen Sekunder (II)"
+        },
+        {
+          "key": "C",
+          "text": "Produsen"
+        },
+        {
+          "key": "D",
+          "text": "Dekomposer"
+        }
+      ],
+      "correctAnswer": "B",
+      "authorName": "Pak Hendra Saputra, M.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "studentId": "user-siswa-1",
+      "studentName": "Ahmad Fauzan",
+      "className": "Kelas 5A",
+      "title": "Rajin Kumpul Tugas (Star Pupil)",
+      "category": "Ketepatan Waktu",
+      "badgeIcon": "Zap",
+      "dateAwarded": "2026-10-17",
+      "description": "Menyelesaikan 5 tugas berturut-turut sebelum tenggat waktu berakhir.",
+      "stars": 5,
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "ach-2",
+      "studentId": "user-siswa-2",
+      "studentName": "Siti Annisa Putri",
+      "className": "Kelas 5A",
+      "title": "Nilai Sempurna IPA (Master of Science)",
+      "category": "Akademik",
+      "badgeIcon": "Trophy",
+      "dateAwarded": "2026-10-18",
+      "description": "Memperoleh nilai 95 pada tugas proyek diagram siklus air.",
+      "stars": 5,
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "ach-3",
+      "studentId": "user-siswa-1",
+      "studentName": "Ahmad Fauzan",
+      "className": "Kelas 5A",
+      "title": "Pembaca Aktif Modul PJJ",
+      "category": "Kedisiplinan",
+      "badgeIcon": "BookOpenCheck",
+      "dateAwarded": "2026-10-16",
+      "description": "Telah membaca dan menelaah seluruh modul tematik dan IPA.",
+      "stars": 4,
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "studyGroups": [
+    {
+      "id": "group-1",
+      "name": "Kelompok 1: Proyek Miniatur Siklus Air",
+      "taskId": "task-1",
+      "taskTitle": "Tugas Harian: Buat Diagram Siklus Air & Jelaskan Tahap Evaporasi",
+      "subjectName": "Ilmu Pengetahuan Alam",
+      "description": "Ruang kolaborasi siswa untuk merancang gambar bagan hidrologi, pembagian tahapan evaporasi, presipitasi, dan penyusunan kesimpulan bersama.",
+      "createdAt": "2026-10-18T08:00:00Z",
+      "pinnedNote": "📌 Catatan Guru (Ibu Rahma): Pastikan bagian infiltrasi dan peresapan air tanah diberi keterangan jelas ya anak-anak!",
+      "members": [
+        {
+          "userId": "user-siswa-1",
+          "name": "Ahmad Fauzan",
+          "role": "siswa",
+          "isLeader": true
+        },
+        {
+          "userId": "user-siswa-2",
+          "name": "Siti Annisa Putri",
+          "role": "siswa"
+        },
+        {
+          "userId": "user-siswa-3",
+          "name": "Budi Kurniawan Pratama",
+          "role": "siswa"
+        },
+        {
+          "userId": "user-guru-1",
+          "name": "Ibu Rahmawati, S.Pd.",
+          "role": "guru"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "chk-1",
+          "title": "Membuat sketsa danau dan penguapan (evaporasi)",
+          "assignedToName": "Ahmad Fauzan",
+          "isCompleted": true
+        },
+        {
+          "id": "chk-2",
+          "title": "Mewarnai pembentukan awan (kondensasi) & hujan",
+          "assignedToName": "Siti Annisa Putri",
+          "isCompleted": true
+        },
+        {
+          "id": "chk-3",
+          "title": "Menyusun kesimpulan 3 kalimat siklus air bumi",
+          "assignedToName": "Budi Kurniawan",
+          "isCompleted": false
+        },
+        {
+          "id": "chk-4",
+          "title": "Review bersama & upload lembar kerja kelompok",
+          "assignedToName": "Semua Anggota",
+          "isCompleted": false
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg-1",
+          "senderId": "user-guru-1",
+          "senderName": "Ibu Rahmawati, S.Pd.",
+          "senderRole": "guru",
+          "messageText": "Halo Kelompok 1! Selamat berdiskusi ya. Bagi tugas kalian agar tugas diagram IPA ini selesai sebelum pukul 17.00.",
+          "timestamp": "08:15"
+        },
+        {
+          "id": "msg-2",
+          "senderId": "user-siswa-1",
+          "senderName": "Ahmad Fauzan",
+          "senderRole": "siswa",
+          "messageText": "Baik Bu Rahma! Teman-teman, saya sudah buat sketsa permukaan laut dan penguapannya di kertas A4.",
+          "timestamp": "08:22"
+        },
+        {
+          "id": "msg-3",
+          "senderId": "user-siswa-2",
+          "senderName": "Siti Annisa Putri",
+          "senderRole": "siswa",
+          "messageText": "Keren Fauzan! Nanti bagian awan dan hujan presipitasi aku warnai pakai pensil warna gradasi biru ya.",
+          "timestamp": "08:25"
+        },
+        {
+          "id": "msg-4",
+          "senderId": "user-siswa-3",
+          "senderName": "Budi Kurniawan Pratama",
+          "senderRole": "siswa",
+          "messageText": "Aku yang ketik kesimpulannya ya: \"Air di bumi tidak pernah habis karena selalu berputar melalui siklus evaporasi dan presipitasi.\"",
+          "timestamp": "08:30"
+        }
+      ],
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "group-2",
+      "name": "Kelompok 2: Kolaborasi Pecahan & Soal Cerita",
+      "taskId": "task-2",
+      "taskTitle": "Latihan Pecahan Senilai & Soal Cerita Halaman 42",
+      "subjectName": "Matematika Terapan",
+      "description": "Diskusi pemecahan soal cerita matematika dan penyederhanaan pecahan senilai modul hal 42.",
+      "createdAt": "2026-10-18T09:30:00Z",
+      "pinnedNote": "📌 Catatan: Gunakan FPB (Faktor Persekutuan Terbesar) untuk menyederhanakan pecahan ke bentuk paling kecil.",
+      "members": [
+        {
+          "userId": "user-siswa-1",
+          "name": "Ahmad Fauzan",
+          "role": "siswa"
+        },
+        {
+          "userId": "user-siswa-2",
+          "name": "Siti Annisa Putri",
+          "role": "siswa",
+          "isLeader": true
+        },
+        {
+          "userId": "user-guru-2",
+          "name": "Pak Hendra Saputra, M.Pd.",
+          "role": "guru"
+        }
+      ],
+      "checklist": [
+        {
+          "id": "chk-21",
+          "title": "Selesaikan soal cerita pembagian kue nomer 1 & 2",
+          "assignedToName": "Siti Annisa Putri",
+          "isCompleted": true
+        },
+        {
+          "id": "chk-22",
+          "title": "Kerjakan soal perbandingan luas taman nomer 3 & 4",
+          "assignedToName": "Ahmad Fauzan",
+          "isCompleted": false
+        },
+        {
+          "id": "chk-23",
+          "title": "Kroscek jawaban akhir bersama Pak Hendra",
+          "assignedToName": "Semua Anggota",
+          "isCompleted": false
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg-201",
+          "senderId": "user-guru-2",
+          "senderName": "Pak Hendra Saputra, M.Pd.",
+          "senderRole": "guru",
+          "messageText": "Anak-anak, jika ada soal pecahan senilai yang membingungkan, tanyakan langsung di ruang obrolan kelompok ini ya.",
+          "timestamp": "09:35"
+        },
+        {
+          "id": "msg-202",
+          "senderId": "user-siswa-2",
+          "senderName": "Siti Annisa Putri",
+          "senderRole": "siswa",
+          "messageText": "Pak Hendra, nomor 3 itu pecahan 15/25 sama-sama dibagi 5 jadi 3/5 kan ya?",
+          "timestamp": "09:40"
+        },
+        {
+          "id": "msg-203",
+          "senderId": "user-guru-2",
+          "senderName": "Pak Hendra Saputra, M.Pd.",
+          "senderRole": "guru",
+          "messageText": "Tepat sekali Annisa! 100 untuk ketelitianmu. Lanjutkan ke nomor 4 ya.",
+          "timestamp": "09:42"
+        }
+      ],
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "attendanceRecords": [
+    {
+      "id": "att-1",
+      "studentId": "user-siswa-1",
+      "studentName": "Ahmad Fauzan",
+      "className": "Kelas 5A",
+      "date": "2026-10-18",
+      "status": "hadir",
+      "note": "Hadir tepat waktu mengikuti sesi PJJ",
+      "checkedByTeacher": "Ibu Rahmawati, S.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "att-2",
+      "studentId": "user-siswa-2",
+      "studentName": "Siti Annisa Putri",
+      "className": "Kelas 5A",
+      "date": "2026-10-18",
+      "status": "hadir",
+      "note": "Aktif merespon diskusi",
+      "checkedByTeacher": "Ibu Rahmawati, S.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "id": "att-3",
+      "studentId": "user-siswa-3",
+      "studentName": "Budi Kurniawan Pratama",
+      "className": "Kelas 5B",
+      "date": "2026-10-18",
+      "status": "hadir",
+      "note": "Presensi digital tuntas",
+      "checkedByTeacher": "Pak Hendra Saputra, M.Pd.",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "monthlyAttendance": [
+    {
+      "className": "Kelas 1A",
+      "level": 1,
+      "totalStudents": 28,
+      "effectiveDays": 22,
+      "hadirRate": 97.4,
+      "totalHadir": 600,
+      "totalSakit": 10,
+      "totalIzin": 5,
+      "totalAlpa": 1,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 1B",
+      "level": 1,
+      "totalStudents": 27,
+      "effectiveDays": 22,
+      "hadirRate": 96.8,
+      "totalHadir": 575,
+      "totalSakit": 12,
+      "totalIzin": 6,
+      "totalAlpa": 1,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 2A",
+      "level": 2,
+      "totalStudents": 29,
+      "effectiveDays": 22,
+      "hadirRate": 98.1,
+      "totalHadir": 626,
+      "totalSakit": 8,
+      "totalIzin": 3,
+      "totalAlpa": 1,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 2B",
+      "level": 2,
+      "totalStudents": 28,
+      "effectiveDays": 22,
+      "hadirRate": 95.9,
+      "totalHadir": 591,
+      "totalSakit": 14,
+      "totalIzin": 9,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 3A",
+      "level": 3,
+      "totalStudents": 30,
+      "effectiveDays": 22,
+      "hadirRate": 96.5,
+      "totalHadir": 637,
+      "totalSakit": 13,
+      "totalIzin": 8,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 4A",
+      "level": 4,
+      "totalStudents": 31,
+      "effectiveDays": 22,
+      "hadirRate": 95.6,
+      "totalHadir": 652,
+      "totalSakit": 18,
+      "totalIzin": 10,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 4B",
+      "level": 4,
+      "totalStudents": 30,
+      "effectiveDays": 22,
+      "hadirRate": 97,
+      "totalHadir": 640,
+      "totalSakit": 11,
+      "totalIzin": 7,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 5A",
+      "level": 5,
+      "totalStudents": 32,
+      "effectiveDays": 22,
+      "hadirRate": 98.3,
+      "totalHadir": 692,
+      "totalSakit": 7,
+      "totalIzin": 4,
+      "totalAlpa": 1,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 5B",
+      "level": 5,
+      "totalStudents": 31,
+      "effectiveDays": 22,
+      "hadirRate": 96.2,
+      "totalHadir": 656,
+      "totalSakit": 15,
+      "totalIzin": 9,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 6A",
+      "level": 6,
+      "totalStudents": 32,
+      "effectiveDays": 22,
+      "hadirRate": 98.9,
+      "totalHadir": 696,
+      "totalSakit": 5,
+      "totalIzin": 2,
+      "totalAlpa": 1,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    },
+    {
+      "className": "Kelas 6B",
+      "level": 6,
+      "totalStudents": 30,
+      "effectiveDays": 22,
+      "hadirRate": 97.6,
+      "totalHadir": 644,
+      "totalSakit": 9,
+      "totalIzin": 5,
+      "totalAlpa": 2,
+      "month": "Oktober 2026",
+      "schoolId": "SCH-DIVA-001"
+    }
+  ],
+  "fileObjects": [],
+  "pushSubscriptions": []
+}
